@@ -3,7 +3,7 @@ import { useGLTF, Center } from '@react-three/drei' // 1. Import Center
 import { useFrame } from "@react-three/fiber";
 
 const Triangle = (props) => {
-    const { nodes, materials } = useGLTF('/models/triangle.glb')
+    const { nodes, materials } = useGLTF('models/triangle.glb')
     const triangleRef = useRef()
 
     useFrame(() => {
@@ -97,6 +97,6 @@ const Triangle = (props) => {
     )
 }
 
-useGLTF.preload('/models/triangle.glb')
+useGLTF.preload('models/triangle.glb')
 
 export default Triangle

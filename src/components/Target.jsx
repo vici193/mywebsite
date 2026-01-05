@@ -49,6 +49,6 @@ const Target = (props) => {
     )
 }
 
-useGLTF.preload('/models/target.glb')
+useGLTF.preload('models/target.glb')
 
 export default Target
